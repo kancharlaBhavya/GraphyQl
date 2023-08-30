@@ -1,0 +1,94 @@
+mutation----
+mutation addStudent($newStudent:UserInput!){
+  Students:addStudent(newStudent:$newStudent){
+   id
+    name
+    age
+    class
+    email
+    
+  }	
+}
+variable ------
+{
+  "newStudent": {
+  "id": 1,
+    "name": "kim",
+    "age": "20",
+    "class": "10th",
+    "email": "kim@gmail.com"
+    
+  }
+} 
+
+
+mutation Update data ------ 
+
+mutation {
+  updateStudent(id: "4", updatedStudent: {
+    name: "Updated Name",
+    age: "Updated Age",
+    class: "Updated Class",
+    email: "updated@example.com"
+  }) {
+    id
+    name
+    age
+    class
+    email
+  }
+}
+
+
+Mutation DeleteData --------------------------------
+
+mutation {
+  deleteStudent(id: "3") {
+    id
+    name
+    age
+    class
+    email
+  }
+}
+
+
+Query----------
+
+query getalldata{
+  students{
+    id 
+    name
+    age
+    class
+    email
+  }
+}
+
+Query getdata by id-------- 
+query getdatById{
+    student (id:"1"){
+        id 
+        name
+        age
+        class
+        email
+    }
+}
+ 
+Query getdata by id------- 
+query getdataById	($id:ID!){
+  student(id:$id){
+    id 
+    name
+    age
+    class
+    email
+  }
+}
+
+variable ------ 
+{ 
+    "id":1
+}
+

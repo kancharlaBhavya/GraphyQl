@@ -1,0 +1,21 @@
+{
+  "name": "Graphy-QL_NEW-Folder",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "apollo-server-core": "^3.5.0",
+    "graphql": "^15.7.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
